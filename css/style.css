@@ -1,10 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Satisfy);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,400italic);
 @import url(http://fonts.googleapis.com/css?family=Oswald:300,400,700);
- 
+@import url(https://fonts.googleapis.com/css2?family=Bangers&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu&display=swap);
+/* @import url(https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@100&display=swap); */
+
 body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
 
@@ -50,7 +54,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    //font-weight: 700;
+    /* //font-weight: 700; */
 }
 
 ul {
@@ -67,7 +71,8 @@ li {
 
 .section-title h3{
     color: #666;
-    //font-style: italic;
+    /* //font-style: italic; */
+    font-weight: bold;
     font-size: 28px;
     font-family: 'Oswald', sans-serif;
     text-transform: none;
@@ -77,13 +82,32 @@ li {
     padding-bottom: 60px;
     color: #999;
     font-size: 18px;
-    //font-style: italic;
+    /* //font-style: italic; */
     font-weight: 300;
 }
+.section-title h2 {
+    font-weight: 700;
+    color: #20247b;
+    font-size: 45px;
+    margin: 0 0 15px;
+    border-left: 5px solid #fc5356;
+    padding-left: 15px;
+}
 
-
-
-
+.whoarewe-heading{
+    margin-bottom: 10rem;
+}
+.whoarewe-heading>h2{
+    text-align: left;
+}
+.reviews-heading>h2{
+    font-weight: 700;
+    color: #20247b;
+    font-size: 45px;
+    margin: 0 0 15px;
+    border-left: 5px solid #fc5356;
+    padding-left: 15px;
+}
 
 .btn-primary {
     text-transform: uppercase;
@@ -108,19 +132,25 @@ li {
     background-color: none !important;
 }
 
-
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
 
 /*------------------------------------------------*/
 /* Start Top Navbar Section                           */
 /*------------------------------------------------*/
 
 .navbar-default {
-    border-color: transparent;
-    background-color: #222;
+    background-color: rgba(0,0,0,1);
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+ font-family: 'Bangers', cursive;
+ color: black
 }
 
 .navbar-default .navbar-collapse {
@@ -138,7 +168,7 @@ li {
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 
@@ -156,7 +186,7 @@ li {
     .navbar-default {
         padding: 25px 0;
         border: 0;
-        background-color: transparent;
+        background-color: rgba(0,0,0,1);
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         -o-transition: padding .3s;
@@ -180,7 +210,7 @@ li {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: rgba(0, 0, 0, 0.8);
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -511,6 +541,7 @@ li {
 	width: 100%;
 	height: 100%;
 	color: #fff;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #main-slide .carousel-indicators {
@@ -647,6 +678,13 @@ li {
 .carousel .item.active .animated2 {
 	-webkit-animation: bounceIn 1s ease-in 800ms both;
 	animation: bounceIn 1s ease-in 800ms both;
+    margin-top: 15rem;
+}
+
+.animated5{
+    -webkit-animation: bounceIn 1s ease-in 800ms both;
+	animation: bounceIn 1s ease-in 800ms both;
+    margin-top: 12rem;
 }
 
 .carousel .item.active .animated3 {
@@ -1266,7 +1304,7 @@ and (min-width : 551px){
 .testimonials .testimonial-content p {
 	font-size: 20px;
 	line-height: 30px;
-	//font-style: italic;
+
 	font-weight: 400;
     margin-bottom: 40px;
 	color: #fff;
@@ -1289,13 +1327,7 @@ and (min-width : 551px){
     color: #d3d3d3;
 }
 
-.touch-slider .owl-controls.clickable .owl-buttons div:hover {
-	//background-color: #00afd1;
-}
 
-.touch-carousel .owl-controls.clickable .owl-buttons div:hover {
-	//background-color: #00afd1;
-}
 
 .testimonials-carousel .owl-controls.clickable .owl-buttons div{
     background: none;
@@ -1357,6 +1389,26 @@ and (min-width : 551px){
 /* Start Contact Section                           */
 /*-------------------------------------------------*/
 
+.reviews {
+    /* background: url(../images/background2.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+   
+}
+
+.steps {
+    background: url(../images/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+   
+}
+
 .contact {
     background: url(../images/parallax/contact-bg.jpg);
     background-size: cover;
@@ -1364,7 +1416,7 @@ and (min-width : 551px){
     background-attachment: fixed;
     background-repeat: no-repeat;
     padding-top: 80px;
-    //padding-bottom: 100px;
+   
 }
 
 .contact .btn-primary {
@@ -1442,7 +1494,8 @@ and (min-width : 551px){
 .footer-contact-info {
     color: #fff;
     padding: 20px 30px;
-    margin-top: 80px;
+    margin-top: 6rem;
+    margin-bottom: 80px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -o-border-radius: 3px;
@@ -1466,7 +1519,7 @@ and (min-width : 551px){
 /*-------------------------------------------------------*/
 
 footer.style-1 {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     padding: 25px 0;
     background: rgba(0, 0, 0, 0.8);
 }
@@ -1581,7 +1634,7 @@ footer.style-1 .footer-link li {
 
 
 .call-to-action {
-    background: url(../images/parallax/call-to.jpg);
+    background: url('../images/background.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 90%;
@@ -2000,6 +2053,9 @@ iframe {
         -webkit-transform: scale(1.0);
       }
 }
+
+
+
 
 
 .footer .footer-socila-icon a {

@@ -10,11 +10,33 @@ $(window).load(function () {
 });
 
 
-
+  
     // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function () {
     
     "use strict";
+
+    $('#customers-testimonials').owlCarousel({
+        loop: true,
+        center: true,
+        items: 3,
+        margin: 0,
+        autoplay: true,
+        dots:true,
+        autoplayTimeout: 8500,
+        smartSpeed: 450,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1170: {
+            items: 3
+          }
+        }
+    });
     
     $('a.page-scroll').bind('click', function (event) {
         var $anchor = $(this);
@@ -80,17 +102,28 @@ $('.navbar-collapse ul li a').click(function () {
 
 ////------- Testimonials Carousel
 	
-var testimonial = $("#testimonial-carousel");
+var testimonial = $(".owl-carousel");
 
 testimonial.owlCarousel({
-	navigation : true,
-	pagination: true,
-	slideSpeed : 2500,
-	stopOnHover: true,
-	autoPlay: 3000,
-	singleItem: true,
-	transitionStyle : "fade",
-	navigationText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>']
+    loop: true,
+    center: true,
+    items: 3,
+    margin: 0,
+    autoplay: true,
+    dots:true,
+    autoplayTimeout: 8500,
+    smartSpeed: 450,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      1170: {
+        items: 3
+      }
+    }
 });
 
 	

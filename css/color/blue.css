@@ -214,9 +214,6 @@ fieldset[disabled] .btn-xl.active {
 	background-color: #28ABE3;
 }
 
-.owl-theme .owl-controls .owl-buttons div {
-	background: #28ABE3;
-}
 
 #team-section .nav-tabs.nav-justified {
     background: #28ABE3;
@@ -246,9 +243,6 @@ fieldset[disabled] .btn-xl.active {
 }
 .testimonials-carousel .owl-controls.clickable .owl-buttons div{
 	color: #28ABE3;
-}
-.owl-theme .owl-controls .owl-page.active{
-    background-color: #28ABE3;
 }
 
 .contact .form-control:focus {

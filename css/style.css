@@ -2491,3 +2491,7 @@ display: inline-block;
     transition: all 250ms ease-out 0s;
     width: 20px;
 }
+
+a#link {
+    color: #20247B;
+}

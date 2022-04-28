@@ -1984,6 +1984,16 @@ a {
     margin-top: 1rem;
 }
 
+#footer-email {
+    display: flex;
+}
+
+#footer-email-i{
+    margin-right: 1rem;
+    margin-top: 4px;
+    margin-left: -4px;
+}
+
 body {
     margin-top: 20px;
 }

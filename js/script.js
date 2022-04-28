@@ -20,22 +20,15 @@ $(function () {
         loop: true,
         center: true,
         items: 3,
-        margin: 0,
-        autoplay: true,
-        dots:true,
-        autoplayTimeout: 8500,
-        smartSpeed: 450,
-        responsive: {
-          0: {
-            items: 1
-          },
-          768: {
-            items: 2
-          },
-          1170: {
-            items: 3
-          }
-        }
+        pagination: true,
+        slideSpeed : 2500,
+    stopOnHover: true,
+      autoPlay: 3000,
+        items: 3,
+      //singleItem:true,
+        itemsMobile : [550,1],
+        itemsDesktopSmall : [991,2],
+    transitionStyle : "fade",
     });
     
     $('a.page-scroll').bind('click', function (event) {
@@ -102,28 +95,18 @@ $('.navbar-collapse ul li a').click(function () {
 
 ////------- Testimonials Carousel
 	
-var testimonial = $(".owl-carousel");
+var testimonial = $("#owl-carousel");
 
 testimonial.owlCarousel({
-    loop: true,
-    center: true,
-    items: 3,
-    margin: 0,
-    autoplay: true,
-    dots:true,
-    autoplayTimeout: 8500,
-    smartSpeed: 450,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      1170: {
-        items: 3
-      }
-    }
+  pagination: true,
+  slideSpeed : 2500,
+stopOnHover: true,
+autoPlay: 3000,
+  items: 4,
+//singleItem:true,
+  itemsMobile : [550,1],
+  itemsDesktopSmall : [991,2],
+transitionStyle : "fade",
 });
 
 	

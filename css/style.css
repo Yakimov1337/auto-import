@@ -1977,7 +1977,7 @@ a {
 
 .avatar-lg img {
     width: 159px;
-    margin-left: -2rem;
+    margin-left: -4rem;
 }
 
 #footer-links {
@@ -2146,7 +2146,7 @@ body {
 }
 
 .how-it-work .panel:hover span {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0);
 }
 
 .how-it-work .panel:nth-child(even) {
@@ -2504,4 +2504,8 @@ display: inline-block;
 
 a#link {
     color: #20247B;
+}
+
+img#logo {
+height: 54px;
 }

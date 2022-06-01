@@ -1,6 +1,6 @@
 # FIVE STAR AUTO IMPORT - Choose the quality over the quantity
 
-![FIVESTARAUTO](https://ibb.co/X7N26md)
+![FIVESTARAUTO](https://i.ibb.co/1rhvBHp/Screenshot-39.png)
 # Project Description
 
 [x] The project goal is to create informational website platform about car import service business. Website provides info
